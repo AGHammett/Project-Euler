@@ -13,7 +13,7 @@ function main()
         term_a = term_b
         term_b = x
 
-        if is_even(x) == true
+        if iseven(x) == true
             total += x
         end
     end
@@ -22,8 +22,5 @@ function main()
 
 end
 
-function is_even(x)
-    return x % 2 == 0
-end
 
 end

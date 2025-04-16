@@ -6,11 +6,12 @@ function main()
 
     target = 600851475143
 
-    for x in target:-1:1
+    for x in 1:target
 
         if target % x == 0
-            if test_prime(x) == true
-                println("$x is the highest prime factor of $target")
+            factor = div(target, x)
+            if test_prime(factor) == true
+                println("$factor is the highest prime factor of $target")
                 break
             end
         end
