@@ -6,10 +6,14 @@ function main()
 
     target = 600851475143
 
-    for x in 1:target
+    for x in 2:target
 
         if target % x == 0
+
+            #Look at the factor pair
             factor = div(target, x)
+
+            #As factors count down the first found will be the greatest
             if test_prime(factor) == true
                 println("$factor is the highest prime factor of $target")
                 break
